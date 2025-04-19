@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignments</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#89F336]">
+    <div class="flex justify-center items-center px-10">
+        <h1>Note uncomment the different Js files one at a time to perform it's individual functions</h1>
+        <h1>Note some exercises can be performed on the HTML page</h1>
+        <div class="border-white p-7">
+            <h2>Exercise 1.1: Even and Odd number identifier </h2>
+            <h3>Enter an even number</h3>
+            <input type="text" id="numberInput" value="">
+            <button onclick="checkEvenNumber()">Submit</button>
+            <p id="feedback"></p>
+        </div>
+
+        <div class="border-white p-7">
+            <h2>Exercise 2: Basic Calculator</h2>
+            <div>
+                <h3>Addition of Numbers</h3>
+                <div>
+                    <label for="num1"></label>
+                <input type="text" name="num1" id="num1">
+
+                <label for="num2"></label>
+                <input type="text" name="num2" id="num2">
+
+                <p id="answer"></p>
+                <div>
+                    <button onclick="add()">+</button>
+                    <button onclick="subtract()">-</button>
+                    <button onclick="multiply()">x</button>
+                    <button onclick="divide()">/</button>
+                </div>
+                
+                </div>
+                
+            </div>
+        
+        </div>
+
+        <div class="border-white p-7">
+            <h2>Exercise 3: Voting Eligibility system</h2>
+            <h3>Input your age in the field below</h3>
+            <label for=" age"></label>
+            <input type="text" name="age" id="input">
+            <p id="age"></p>
+            <button type="button" onclick="vote()">Submit</button>
+
+        </div>
+
+        <div class="border-white p-7">
+            <h2>Exercise 4: Print numbers 1-10</h2>
+            <h3>Check the console of ypur browser</h3>
+        </div>
+
+
+    </div>
+
+
+    
+    
+
+<script src="exercise01.js"></script>
+<!-- <script src="exercise02.js"></script>
+<script src="exercise03.js"></script>
+<script src="exercise04.js"></script>
+<script src="exercise05.js"></script>
+<script src="exercise06.js"></script>
+<script src="exercise07.js"></script>
+<script src="exercise08.js"></script> -->
+</body>
+</html>

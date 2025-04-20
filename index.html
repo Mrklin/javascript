@@ -7,34 +7,34 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-[#89F336]">
-    <div class="flex justify-center items-center px-10">
-        <h1>Note uncomment the different Js files one at a time to perform it's individual functions</h1>
-        <h1>Note some exercises can be performed on the HTML page</h1>
-        <div class="border-white p-7">
-            <h2>Exercise 1.1: Even and Odd number identifier </h2>
-            <h3>Enter an even number</h3>
-            <input type="text" id="numberInput" value="">
-            <button onclick="checkEvenNumber()">Submit</button>
-            <p id="feedback"></p>
+    <div class="flex justify-center items-center flex-col m-10 px-10 bg-gray-200 gap-10">
+        <h1 class="text-3xl">Note uncomment the different Js files one at a time to perform it's individual functions</h1>
+        <h2 class="text-2xl">Note some exercises can be performed on the HTML page</h2>
+        <div class="flex flex-col gap-6 items-center border border-black rounded-md p-7 w-[100%]">
+            <h2 class="text-2xl">Exercise 1.1: Even and Odd number identifier </h2>
+            <h3 class="text-xl">Enter an even number</h3>
+            <input type="text" id="numberInput" value="" class="border border-black pl-4">
+            <button onclick="check()" class="bg-[#89F336] w-[100px] cursor-pointer">Submit</button>
+            <p class="text-[24px] text-black" id="feedback"></p>
         </div>
 
-        <div class="border-white p-7">
-            <h2>Exercise 2: Basic Calculator</h2>
-            <div>
-                <h3>Addition of Numbers</h3>
+        <div class=" flex flex-col gap-6 items-center border border-black rounded-md p-7 w-[100%]">
+            <h2 class="text-2xl ">Exercise 2: Basic Calculator</h2>
+            <div class="flex flex-col justify-center items-center">
+                <h3 class="text-xl">Basic Maths Operations</h3>
                 <div>
                     <label for="num1"></label>
-                <input type="text" name="num1" id="num1">
+                <input type="text" name="num1" id="num1" class="border border-black pl-4">
 
                 <label for="num2"></label>
-                <input type="text" name="num2" id="num2">
+                <input type="text" name="num2" id="num2" class="border border-black pl-4">
 
-                <p id="answer"></p>
-                <div>
-                    <button onclick="add()">+</button>
-                    <button onclick="subtract()">-</button>
-                    <button onclick="multiply()">x</button>
-                    <button onclick="divide()">/</button>
+                <p class="text-[24px] text-black" id="answer"></p>
+                <div class="w-[350px] flex justify-between pt-5 gap-6">
+                    <button onclick="add()" class="w-[25%] bg-[#89F336] cursor-pointer">+</button>
+                    <button onclick="subtract()" class="w-[25%] bg-[#89F336] cursor-pointer">-</button>
+                    <button onclick="multiply()" class="w-[25%] bg-[#89F336] cursor-pointer">x</button>
+                    <button onclick="divide()" class="w-[25%] bg-[#89F336] cursor-pointer">/</button>
                 </div>
                 
                 </div>
@@ -43,20 +43,45 @@
         
         </div>
 
-        <div class="border-white p-7">
-            <h2>Exercise 3: Voting Eligibility system</h2>
-            <h3>Input your age in the field below</h3>
+        <div class="flex flex-col gap-6 items-center border border-black rounded-md p-7 w-[100%]">
+            <h2 class="text-2xl">Exercise 3: Voting Eligibility system</h2>
+            <h3 class="text-xl" >Input your age in the field below</h3>
             <label for=" age"></label>
-            <input type="text" name="age" id="input">
-            <p id="age"></p>
-            <button type="button" onclick="vote()">Submit</button>
+            <input type="text" name="age" id="input" class="border border-black pl-4">
+            <p class="text-[24px] text-black" id="age"></p>
+            <button type="button" onclick="vote()" class="bg-[#89F336] cursor-pointer w-[100px]">Submit</button>
 
         </div>
 
-        <div class="border-white p-7">
-            <h2>Exercise 4: Print numbers 1-10</h2>
-            <h3>Check the console of ypur browser</h3>
+        <div class="flex flex-col gap-6 items-center border border-black rounded-md p-7 w-[100%] mb-5">
+            <h2 class="text-2xl" >Exercise 4: Print numbers 1-10</h2>
+            <h3 class="text-xl" >Check the console of your browser</h3>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="flex flex-col gap-6 items-center border border-black rounded-md p-7 w-[100%] mb-6">
+            <h2 class="text-2xl" >Exercise 5: Multiplication of Numbers</h2>
+            <label for="input"></label>
+            <input type="text" name="input" id="input" class="border border-black pl-4">
+            <button onclick="multiply()" class="bg-[#89F336] cursor-pointer w-[100px]">Submit</button>
+            <h3 class="text-xl" id="head"></h3>
+            <p class="text-[24px] text-black" id="value"></p>
+        </div> -->
 
 
     </div>
@@ -66,11 +91,11 @@
     
 
 <script src="exercise01.js"></script>
-<!-- <script src="exercise02.js"></script>
+<script src="exercise02.js"></script>
 <script src="exercise03.js"></script>
-<script src="exercise04.js"></script>
+<!-- <script src="exercise04.js"></script> -->
 <script src="exercise05.js"></script>
-<script src="exercise06.js"></script>
+<!-- <script src="exercise06.js"></script>
 <script src="exercise07.js"></script>
 <script src="exercise08.js"></script> -->
 </body>

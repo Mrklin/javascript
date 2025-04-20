@@ -30,10 +30,8 @@
 
                     //On The Page
 
-(function checkEvenNumber() {
+function check() {
     "use strict";
-
-    e.preventDefault();
 
     const inputElement = document.getElementById("numberInput");
     const feedback = document.getElementById("feedback");
@@ -41,7 +39,7 @@
     const userInput = inputElement.value;
     
 
-    if (userInput === "") {
+    if (userInput === "" || userInput === null) {
         feedback.textContent = "Please enter a number.";
     } 
     const number = parseInt(userInput);
@@ -51,11 +49,11 @@
         }
 
          else if(number % 2 !== 0) {
-            feedback.textContent = number +" is not an even number";
+            feedback.textContent = number +" is an odd number";
         } else  {
             feedback.textContent = "Thank you. "+ number + " is an even number.";
         }
 
       document.getElementById("numberInput").value = "";
         
-})();
+}

@@ -1,4 +1,5 @@
 
+                            // Multiplication Table of numbers
 
 let number = prompt("input a number:");
 
@@ -27,3 +28,58 @@ if ( number == null || number =="") {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function multiply() {
+    
+//     let num = document.getElementById("input");
+//     const val = document.getElementById("value");
+//     const head = document.getElementById("head");
+
+
+//     if ( num == null || num =="") {
+//         val.textContent = "Please input a number";
+        
+//     } else {
+
+//         num = parseFloat(num);
+
+//         if (isNaN(num)) {
+//             val.textContent = "The value inputted is invalid";  
+
+//         } else{
+        
+
+//         for (let i = 1; i <= 12; i++) {
+//             const answer = eval (num * i);
+
+//             console.log(num+" x "+ i +" = "+ answer);
+//             head.textContent = `Multiplication of ${num} is :`;
+//             val.textContent = `${num} x ${i} = ${answer}`;
+//         }
+
+//         }
+
+         
+//     }
+// }
